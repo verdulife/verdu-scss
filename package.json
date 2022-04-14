@@ -1,0 +1,26 @@
+{
+  "name": "verdu-scss",
+  "version": "1.0.0",
+  "description": "theming framework",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "framework",
+    "utility",
+    "classes",
+    "custom",
+    "properties",
+    "theme",
+    "theming"
+  ],
+  "author": "verdu",
+  "license": "ISC",
+  "dependencies": {
+    "prompts": "2.4.2"
+  }
+}

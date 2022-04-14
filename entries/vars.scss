@@ -1,0 +1,88 @@
+:root {
+  //primary color
+  --pri: cyan;
+  --pri-100: lighten(var(--pri), 20%);
+  --pri-200: lighten(var(--pri), 15%);
+  --pri-300: lighten(var(--pri), 10%);
+  --pri-400: lighten(var(--pri), 5%);
+  --pri-500: var(--pri);
+  --pri-600: lighten(var(--pri), 5%);
+  --pri-700: lighten(var(--pri), 10%);
+  --pri-800: lighten(var(--pri), 15%);
+  --pri-900: lighten(var(--pri), 20%);
+  
+  //secondary color
+  --sec: magenta;
+  --sec-100: lighten(var(--sec), 20%);
+  --sec-200: lighten(var(--sec), 15%);
+  --sec-300: lighten(var(--sec), 10%);
+  --sec-400: lighten(var(--sec), 5%);
+  --sec-500: var(--sec);
+  --sec-600: lighten(var(--sec), 5%);
+  --sec-700: lighten(var(--sec), 10%);
+  --sec-800: lighten(var(--sec), 15%);
+  --sec-900: lighten(var(--sec), 20%);
+  
+  --ter: yellow;
+  --ter-100: lighten(var(--ter), 20%);
+  --ter-200: lighten(var(--ter), 15%);
+  --ter-300: lighten(var(--ter), 10%);
+  --ter-400: lighten(var(--ter), 5%);
+  --ter-500: var(--ter);
+  --ter-600: lighten(var(--ter), 5%);
+  --ter-700: lighten(var(--ter), 10%);
+  --ter-800: lighten(var(--ter), 15%);
+  --ter-900: lighten(var(--ter), 20%);
+  
+  --white: #fff;
+  --white-100: lighten(var(--white), 20%);
+  --white-200: lighten(var(--white), 15%);
+  --white-300: lighten(var(--white), 10%);
+  --white-400: lighten(var(--white), 5%);
+  --white-500: var(--white);
+  --white-600: lighten(var(--white), 5%);
+  --white-700: lighten(var(--white), 10%);
+  --white-800: lighten(var(--white), 15%);
+  --white-900: lighten(var(--white), 20%);
+  
+  --black: #000;
+  --black-100: lighten(var(--black), 20%);
+  --black-200: lighten(var(--black), 15%);
+  --black-300: lighten(var(--black), 10%);
+  --black-400: lighten(var(--black), 5%);
+  --black-500: var(--black);
+  --black-600: lighten(var(--black), 5%);
+  --black-700: lighten(var(--black), 10%);
+  --black-800: lighten(var(--black), 15%);
+  --black-900: lighten(var(--black), 20%);
+
+  --grey: #808080;
+  --grey-100: lighten(var(--grey), 20%);
+  --grey-200: lighten(var(--grey), 15%);
+  --grey-300: lighten(var(--grey), 10%);
+  --grey-400: lighten(var(--grey), 5%);
+  --grey-500: var(--grey);
+  --grey-600: lighten(var(--grey), 5%);
+  --grey-700: lighten(var(--grey), 10%);
+  --grey-800: lighten(var(--grey), 15%);
+  --grey-900: lighten(var(--grey), 20%);
+
+  --bg: #fafafa;
+  --bg-dark: #212121;
+  
+  --base: #212121;
+  --base-dark: #fafafa;
+
+  --border: #e0e0e0;
+  --border-dark: #bdbdbd;
+
+  --info: #2196f3;
+  --succ: #00c853;
+  --warn: #ffc107;
+  --err: #d50000;
+
+  --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-m: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  --shadow-l: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  --shadow-xl: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
