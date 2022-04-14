@@ -1,0 +1,58 @@
+// reset
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  line-height: 1.4;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+
+  &:not(code, pre) {
+    font-family: var(--font);
+  }
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--black-900);
+  color: var(--base);
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $bg;
+  border-radius: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--pri);
+}
+
+ul {
+  list-style: none;
+}
+
+pre,
+code {
+  font-family: "Operator Mono Lig", monospace;
+}

@@ -1,0 +1,47 @@
+//reset
+input,
+select,
+textarea {
+  background: transparent;
+  color: $base;
+  font-size: 0.9em;
+  padding: 0.9em 1em;
+  transition: 200ms;
+}
+
+//basics
+input.round,
+select.round,
+textarea.round {
+  border-radius: 4em;
+  padding: 0.9em 1.2em;
+}
+input.semi,
+select.semi,
+textarea.semi {
+  border-radius: 0.4em;
+}
+input.out,
+select.out,
+textarea.out {
+  border: 1px solid $border;
+}
+input.disabled,
+select.dissabled,
+textarea.disabled {
+  cursor: not-allowed;
+  background: $disabled;
+  color: $sub;
+}
+
+//colors
+input.white,
+select.white,
+textarea.white {
+  background: $white;
+}
+input.black,
+select.black,
+textarea.black {
+  background: $black;
+}

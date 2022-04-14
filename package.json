@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "theming framework",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
@@ -21,6 +20,7 @@
   "author": "verdu",
   "license": "ISC",
   "dependencies": {
+    "fs-extra": "^10.0.1",
     "prompts": "2.4.2"
   }
 }

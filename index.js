@@ -1,22 +1,22 @@
-import prompts from "prompts";
-import { copyFile } from "fs";
-import { join } from "path";
+const prompts = require("prompts");
+const { copy } = require("fs-extra");
 
-const start = [
-  {
-    type: "text",
-    name: "path",
-    message: "Where you want locate your theme entries?",
-  },
-];
+(async () => {
+  const start = [
+    {
+      type: "text",
+      name: "path",
+      message: "Where you want locate your theme entries?",
+    },
+  ];
 
-const res = await prompts(start, {
-  onSubmit: handleSubmit,
-});
+  const onSubmit = (_, answer) => {
+    copy(
+      `${__dirname}/entries/vars.scss`,
+      `${process.cwd()}/${answer}/vars.scss`,
+      () => console.log("🎉 Successfully created theme entries!")
+    );
+  };
 
-function handleSubmit(res) {
-  copyFile(
-    join(__dirname, "entries", "vars.scss"),
-    join(process.cwd(), res.path, "vars.scss")
-  );
-}
+  await prompts(start, { onSubmit });
+})();
