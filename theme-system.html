@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme System 🚀</title>
+    <link rel="stylesheet" href="verdu.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer>
+      const iframes = document.querySelectorAll("iframe");
+      iframes.forEach(iframe => {
+        window.addEventListener("resize", () => {
+          iframe.style.height = `${iframe.contentWindow.document.body.scrollHeight}px`;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <main class="row xfill">
+      <aside class="col">hello</aside>
+      <div class="scroll">
+        <div class="content col xfill">
+          <h1>Colors</h1>
+          <h-div></h-div>
+          <iframe width="100%" src="./theme/colors.html" onload="this.style.height=this.contentWindow.document.body.scrollHeight + 'px';">
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const cardTemplate = (v) => /*html*/ `
+        <li>
+          <div class="card col">
+            <div
+              class="color-box xfill"
+              style="background: ${v}"
+            ></div>
+            <code>${v}</code>
+          </div>
+        </li>
+      `;
+
+      const pris = [
+        "var(--pri-100)",
+        "var(--pri-200)",
+        "var(--pri-300)",
+        "var(--pri-500)",
+        "var(--pri-700)",
+        "var(--pri-800)",
+        "var(--pri-900)",
+      ];
+
+      const prisEl = document.querySelector(".pris");
+
+      pris.forEach((v, i) => {
+        v = i === 3 ? "var(--pri)" : v;
+        prisEl.insertAdjacentHTML("beforeend", cardTemplate(v));
+      });
+    </script>
+  </body>
+</html>

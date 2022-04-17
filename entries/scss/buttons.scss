@@ -6,7 +6,6 @@ a.btn {
   background-color: transparent;
   font-size: 0.9em;
   font-weight: bold;
-  color: $base;
   border: 2px solid transparent;
   padding: 0.9em 2em;
   user-select: none;
@@ -29,98 +28,98 @@ a.semi {
 }
 button.out,
 a.out {
-  border-color: $base;
+  border-color: var(--base);
 }
 button.disabled,
 a.disabeled {
   cursor: not-allowed;
-  background: $grey;
-  color: $disabled;
+  background: var(--grey);
+  color: var(--dis);
 }
 
 //colors
 button.pri,
 a.pri {
-  background: $pri;
-  border-color: $pri;
+  background: var(--pri);
+  border-color: var(--pri);
 }
 button.sec,
 a.sec {
-  background: $sec;
-  border-color: $sec;
+  background: var(--sec);
+  border-color: var(--sec);
 }
 button.black,
 a.black {
-  background: $black;
-  border-color: $black;
-  color: $bg;
+  background: var(--black);
+  border-color: var(--black);
+  color: var(--white);
 }
 button.white,
 a.white {
-  background: $white;
-  border-color: $white;
+  background: var(--white);
+  border-color: var(--white);
 }
-button.link,
-a.link {
-  background: $link;
-  border-color: $link;
-  color: $white;
+button.info,
+a.info {
+  background: var(--info);
+  border-color: var(--info);
+  color: var(--white);
 }
 button.succ,
 a.succ {
-  background: $success;
-  border-color: $success;
-  color: $white;
+  background: var(--succ);
+  border-color: var(--succ);
+  color: var(--white);
 }
 button.warn,
 a.warn {
-  background: $warning;
-  border-color: $warning;
+  background: var(--warn);
+  border-color: var(--warn);
 }
 button.err,
 a.err {
-  background: $error;
-  border-color: $error;
-  color: $white;
+  background: var(--err);
+  border-color: var(--err);
+  color: var(--white);
 }
 
 button.outpri,
 a.outpri {
-  color: $pri;
-  border-color: $pri;
+  color: var(--pri);
+  border-color: var(--pri);
 }
 button.outsec,
 a.outsec {
-  color: $sec;
-  border-color: $sec;
+  color: var(--sec);
+  border-color: var(--sec);
 }
 button.outblack,
 a.outblack {
-  color: $black;
-  border-color: $black;
+  color: var(--black);
+  border-color: var(--black);
 }
 button.outwhite,
 a.outwhite {
-  color: $white;
-  border-color: $white;
+  color: var(--white);
+  border-color: var(--white);
 }
-button.outlink,
-a.outlink {
-  color: $link;
-  border-color: $link;
+button.outinfo,
+a.outinfo {
+  color: var(--info);
+  border-color: var(--info);
 }
 button.outsucc,
 a.outsucc {
-  color: $success;
-  border-color: $success;
+  color: var(--succ);
+  border-color: var(--succ);
 }
 button.outwarn,
 a.outwarn {
-  color: $warning;
-  border-color: $warning;
+  color: var(--warn);
+  border-color: var(--warn);
 }
 button.outerr,
 a.outerr {
-  color: $error;
-  border-color: $error;
+  color: var(--err);
+  border-color: var(--err);
 }

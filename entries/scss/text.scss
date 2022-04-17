@@ -1,18 +1,18 @@
 b.pri {
-  color: $link;
+  color: var(--pri);
 }
 b.sec {
-  color: $link;
+  color: var(--sec);
 }
-b.link {
-  color: $link;
+b.info {
+  color: var(--info);
 }
 b.succ {
-  color: $success;
+  color: var(--succ);
 }
 b.warn {
-  color: $warning;
+  color: var(--warn);
 }
 b.err {
-  color: $error;
+  color: var(--err);
 }

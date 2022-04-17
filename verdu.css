@@ -1,0 +1,586 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes scaleOut {
+  from {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+}
+@keyframes fromTop {
+  from {
+    transform: translate3d(0, -100vh, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fromLeft {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes fromRight {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fromBot {
+  from {
+    transform: translate3d(0, 100vh, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes toTop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+@keyframes toLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+@keyframes toRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@keyframes toBot {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+@keyframes fromFlipX {
+  from {
+    transform: rotateX(90deg);
+    position: absolute;
+  }
+  to {
+    transform: rotateX(0);
+  }
+}
+@keyframes toFlipX {
+  from {
+    transform: rotateX(0);
+    position: absolute;
+  }
+  to {
+    transform: rotateX(90deg);
+  }
+}
+@keyframes fromFlipY {
+  from {
+    transform: rotateY(90deg);
+    position: absolute;
+  }
+  to {
+    transform: rotateY(0);
+  }
+}
+@keyframes toFlipY {
+  from {
+    transform: rotateY(0);
+    position: absolute;
+  }
+  to {
+    transform: rotateY(90deg);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translateX(1px);
+  }
+  10% {
+    transform: translateX(-1px);
+  }
+  20% {
+    transform: translateX(-3px);
+  }
+  30% {
+    transform: translateX(3px);
+  }
+  40% {
+    transform: translateX(1px);
+  }
+  50% {
+    transform: translateX(-1px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  70% {
+    transform: translateX(3px);
+  }
+  80% {
+    transform: translateX(-1px);
+  }
+  90% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(1px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes pulse {
+  0%, 20%, 50%, 80%, 100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+}
+button,
+a.btn {
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+  font-size: 0.9em;
+  font-weight: bold;
+  border: 2px solid transparent;
+  padding: 0.9em 2em;
+  user-select: none;
+  -webkit-user-drag: none;
+  transition: 200ms;
+}
+button:hover,
+a.btn:hover {
+  transform: scale(0.95);
+}
+
+button.round,
+a.round {
+  border-radius: 4em;
+}
+
+button.semi,
+a.semi {
+  border-radius: 0.4em;
+}
+
+button.out,
+a.out {
+  border-color: var(--base);
+}
+
+button.disabled,
+a.disabeled {
+  cursor: not-allowed;
+  background: var(--grey);
+  color: var(--dis);
+}
+
+button.pri,
+a.pri {
+  background: var(--pri);
+  border-color: var(--pri);
+}
+
+button.sec,
+a.sec {
+  background: var(--sec);
+  border-color: var(--sec);
+}
+
+button.black,
+a.black {
+  background: var(--black);
+  border-color: var(--black);
+  color: var(--white);
+}
+
+button.white,
+a.white {
+  background: var(--white);
+  border-color: var(--white);
+}
+
+button.info,
+a.info {
+  background: var(--info);
+  border-color: var(--info);
+  color: var(--white);
+}
+
+button.succ,
+a.succ {
+  background: var(--succ);
+  border-color: var(--succ);
+  color: var(--white);
+}
+
+button.warn,
+a.warn {
+  background: var(--warn);
+  border-color: var(--warn);
+}
+
+button.err,
+a.err {
+  background: var(--err);
+  border-color: var(--err);
+  color: var(--white);
+}
+
+button.outpri,
+a.outpri {
+  color: var(--pri);
+  border-color: var(--pri);
+}
+
+button.outsec,
+a.outsec {
+  color: var(--sec);
+  border-color: var(--sec);
+}
+
+button.outblack,
+a.outblack {
+  color: var(--black);
+  border-color: var(--black);
+}
+
+button.outwhite,
+a.outwhite {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+button.outinfo,
+a.outinfo {
+  color: var(--info);
+  border-color: var(--info);
+}
+
+button.outsucc,
+a.outsucc {
+  color: var(--succ);
+  border-color: var(--succ);
+}
+
+button.outwarn,
+a.outwarn {
+  color: var(--warn);
+  border-color: var(--warn);
+}
+
+button.outerr,
+a.outerr {
+  color: var(--err);
+  border-color: var(--err);
+}
+
+.view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.scroll {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll::-webkit-scrollbar {
+  width: 7px;
+}
+.scroll::-webkit-scrollbar-track {
+  background-color: var(--border);
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: var(--pri);
+}
+
+.box {
+  border: 1px solid var(--border);
+  padding: 0.9em 1em;
+}
+
+.box.round {
+  border-radius: 0.4em;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.slider * {
+  user-select: none;
+}
+
+.slide {
+  display: inline-flex;
+}
+
+.row {
+  width: auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.col {
+  width: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+h-div {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  background: var(--border);
+}
+
+v-div {
+  width: 1px;
+  height: 100%;
+  display: flex;
+  background: var(--border);
+}
+
+.jstart {
+  justify-content: flex-start;
+}
+
+.jcenter {
+  justify-content: center;
+}
+
+.jend {
+  justify-content: flex-end;
+}
+
+.jbetween {
+  justify-content: space-between;
+}
+
+.jaround {
+  justify-content: space-around;
+}
+
+.jevenly {
+  justify-content: space-evenly;
+}
+
+.astart {
+  align-items: flex-start;
+}
+
+.acenter {
+  align-items: center;
+}
+
+.astretch {
+  align-items: stretch;
+}
+
+.abase {
+  align-items: baseline;
+}
+
+.aend {
+  align-items: flex-end;
+}
+
+.fstart {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.fcenter {
+  justify-content: center;
+  align-items: center;
+}
+
+.fend {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.xfill {
+  width: 100%;
+}
+
+.xhalf {
+  width: 50%;
+}
+
+.yfill {
+  height: 100%;
+}
+
+.yhalf {
+  height: 50%;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+input,
+select,
+textarea {
+  background: transparent;
+  font-size: 0.9em;
+  padding: 0.9em 1em;
+  transition: 200ms;
+}
+
+input.round,
+select.round,
+textarea.round {
+  border-radius: 4em;
+  padding: 0.9em 1.2em;
+}
+
+input.semi,
+select.semi,
+textarea.semi {
+  border-radius: 0.4em;
+}
+
+input.out,
+select.out,
+textarea.out {
+  border: 1px solid var(--border);
+}
+
+input.disabled,
+select.dissabled,
+textarea.disabled {
+  cursor: not-allowed;
+  background: var(--grey);
+  color: var(--dis);
+}
+
+input.white,
+select.white,
+textarea.white {
+  background: var(--white);
+}
+
+input.black,
+select.black,
+textarea.black {
+  background: var(--black);
+}
+
+b.pri {
+  color: var(--pri);
+}
+
+b.sec {
+  color: var(--sec);
+}
+
+b.info {
+  color: var(--info);
+}
+
+b.succ {
+  color: var(--succ);
+}
+
+b.warn {
+  color: var(--warn);
+}
+
+b.err {
+  color: var(--err);
+}
+
+/*# sourceMappingURL=verdu.css.map */

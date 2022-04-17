@@ -1,4 +1,3 @@
-// reset
 *,
 *:before,
 *:after {
@@ -14,10 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: transparent;
-
-  &:not(code, pre) {
-    font-family: var(--font);
-  }
+}
+*:not(code, pre),
+*:before:not(code, pre),
+*:after:not(code, pre) {
+  font-family: var(--font);
 }
 
 html,
@@ -56,3 +56,5 @@ pre,
 code {
   font-family: "Operator Mono Lig", monospace;
 }
+
+/*# sourceMappingURL=reset.css.map */

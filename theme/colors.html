@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors 🎨</title>
+    <link rel="stylesheet" href="../verdu.css" />
+    <link rel="stylesheet" href="../styles.css" />
+
+    <script type="module">
+      import {
+        createPalette,
+        neutralPalette,
+        customPalette,
+      } from "../lib/colors.js";
+
+      /* Primary colors */
+
+      createPalette("primary", "#0984e3");
+      createPalette("secondary", "#fdcb6e");
+      createPalette("terciary", "#e84393");
+
+      /* Neutral colors */
+
+      neutralPalette("grey");
+
+      /* Notification colors */
+      customPalette("notification", {
+        info: "#2196f3",
+        success: "#00c853",
+        warning: "#ffc107",
+        error: "#d50000",
+      });
+
+      /* Interface colors */
+      customPalette("interface", {
+        bg: "#fafafa",
+        text: "#212121",
+        title: "#212121",
+        sub: "#757575",
+        link: "#2196f3",
+        border: "#e0e0e0",
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
